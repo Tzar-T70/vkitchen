@@ -1,0 +1,228 @@
+/* General Body Styling */
+body {
+    background-image: url('/images/background.png');
+    background-color: rgb(0, 122, 63);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Apply font family */
+}
+
+/*for the homepage image*/
+img {
+    width: 95%;
+}
+
+.row {
+    padding: 10px;
+}
+
+div {
+    padding: 10px;
+}
+
+
+
+/* Header Styling */
+/* Header Container */
+.main-header {
+    background-color: #008c31a5;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, nav right */
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+    border-bottom: 10px;
+}
+
+/* Navigation Links */
+.auth-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+
+.auth-links a:active {
+    transform: translateY(0);
+}
+
+/* Add subtle animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-links a {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.main-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .auth-links {
+        margin-top: 15px;
+        gap: 10px;
+    }
+}
+
+.auth-links a.active {
+    background-color: rgba(255,255,255,0.25);
+    font-weight: 600;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgba(194, 152, 35, 0.443);
+    color: black;
+    padding: 20px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%;
+    position: relative;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    border-top: 3px solid #8c6d00; /* Adding a border */
+}
+
+/* Footer Paragraph Styling */
+.footer p {
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer Navigation Styling */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-nav ul li {
+    margin: 8px 0;
+}
+
+.footer-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.footer-nav ul li a:active {
+    color: #c0c0c0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.75rem;
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background: #3a5a80;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.register-link {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}

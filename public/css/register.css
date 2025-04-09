@@ -1,0 +1,121 @@
+
+/* Registration Form Container */
+.registration-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.registration-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registration-header h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.registration-header p {
+    color: #7f8c8d;
+    font-size: 15px;
+}
+
+/* Form Elements */
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.registration-form input:focus {
+    border-color: #008c31;
+    box-shadow: 0 0 0 3px rgba(0, 140, 49, 0.1);
+    outline: none;
+}
+
+/* Submit Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #008c31;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    background-color: #006622;
+    transform: translateY(-2px);
+}
+
+.register-btn:active {
+    transform: translateY(0);
+}
+
+/* Form Footer */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #008c31;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.invalid-feedback {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+.is-invalid {
+    border-color: #e74c3c !important;
+}
+
+/* Success Message */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
